@@ -5,6 +5,7 @@ if(activeItem) {
 	activeItem.classList.add("active");
 }
 
+
 window.setTimeout(() => {
 	let alertsWrapper = document.querySelector(".alerts-wrapper");
 	if(alertsWrapper) {
