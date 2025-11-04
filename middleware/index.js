@@ -1,3 +1,4 @@
+//index.js
 const middleware = {
 	ensureLoggedIn: (req, res, next) => {
 		if(req.isAuthenticated()) {
