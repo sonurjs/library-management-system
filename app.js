@@ -13,7 +13,6 @@ require("./config/dbConnection.js")();
 require("./config/passport.js")(passport);
 
 
-
 app.set("view engine", "ejs");
 app.use(expressLayouts);
 app.use("/assets", express.static(__dirname + "/assets"));
