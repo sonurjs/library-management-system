@@ -25,7 +25,12 @@ const loanSchema = new mongoose.Schema({
 	status: {
 		type: String,
 		enum: ["issued", "returned", "overdue"]
-	}
+	},
+		fineAmount: {
+    type: Number,
+    default: 0 // default no fine if not overdue
+  }
+	
 });
 
 const Loan = mongoose.model("loans", loanSchema);
