@@ -1,88 +1,132 @@
-# Library Management System
-A web application which can manage various tasks in library for both admins and students.
-
-![image](https://user-images.githubusercontent.com/86913048/227118328-7af0ff95-9f70-4aa6-8cf6-eb7d2998f088.png)
+Library Management System
+A web application for efficient library management built with Node.js, Express.js, MongoDB, and EJS. This project streamlines book inventory, automates fine calculation, facilitates user management for both students and admins, and includes a comprehensive dashboards for each role.
 
 
-## Table of Contents
-* [Features](#features)
-* [Technologies used](#technologies-used)
-* [npm packages used](#npm-packages-used)
-* [Prerequisites](#prerequisites)
-* [Installation and setup](#installation-and-setup)
-* [Useful Links](#useful-links)
-* [Contact](#contact)
 
+General
 
-## Features
-- The system consists of two types of users: admins and students.
-- Each user should have an account.
-- The application provides signup, login and logout functionalities.
-- A book can have multiple copies so that copies of same book can be issued to multiple students.
+Admin and Student role-based dashboards
 
-### Admin Features
-- Admins can view, add, update or delete the books.
-- Admins can view all the students who have an account in the system.
-- Admins can keep track of all the activities of library.
-- Admins can issue book to a student.
-- Admins can collect book from a student.
-- Admins can view all the current loans.
-- Admins can also view the past loans against which the books have been returned.
-- Admins can send the email as reminders to the students.
-- Admins can update their profile.
+Secure sign up, login, and logout
 
-### Student Features
-- Students can view all the books in the library.
-- students can keep track of all their activities.
-- Students can view all the books which they currently possess along with status (overdue or not).
-- Students can also view the books which they have already returned.
-- Students can update their profile.
+Track activities and manage user accounts
 
+Admin
 
-## Technologies used
-- HTML
-- CSS
-- Bootstrap
-- Javascript
-- Node.js
-- Express.js
-- Mongodb
-- ejs
+Add, edit, and delete books
 
-## npm packages used
-- express
-- ejs
-- express-ejs-layouts
-- mongoose
-- express-session
-- bcryptjs
-- passport
-- passport-local
-- connect-flash
-- nodemailer
-- method-override
-- dotenv
+View and manage all students
 
-## Prerequisites
-For running the application:
-- Node.js must be installed on the system.
-- You should have a MongoDB database.
-- You should have a code editor (preferred: VS Code)
+Issue and collect books
 
-## Installation and Setup
-1. Install all the dependencies
-	```sh
-	npm install
-	```
-2. Create a file named ".env" and enter the following credentials:
-	```js
-	MONGO_URI=your-mongo-uri
-	```
-3. Run the application
-	```sh
-	npm start
-	```
-4. Open http://localhost:5000
-5. You need to first signup and then login as admin or student to run the application.
-6. Admin signup page can't be accessed from the application. However, I have created a hidden route to access the page: `/auth/admin-signup`
+See/activity logs and overdue loans
+
+Calculate/view overdue fines
+
+Send automated email reminders
+
+View and update admin profile
+
+Student
+
+Browse library books
+
+Track issued and previously returned books
+
+See personal overdue/fine summary
+
+View all activities
+
+Update personal profile
+
+🛠️ Technologies
+Node.js, Express.js
+
+MongoDB, Mongoose
+
+EJS Templating
+
+Bootstrap & CSS
+
+Nodemailer
+
+📦 Key NPM Packages
+express
+
+mongoose
+
+ejs & express-ejs-layouts
+
+express-session
+
+passport, passport-local, bcryptjs
+
+connect-flash
+
+nodemailer
+
+method-override
+
+dotenv
+
+⚡ Getting Started
+Prerequisites
+Node.js (v14 or above)
+
+MongoDB Cloud/Local instance
+
+npm
+
+Installation
+Clone this repo:
+
+bash
+git clone <your-repository-url>
+cd Library-management-system
+Install dependencies:
+
+bash
+npm install
+Set environment variables (create .env file):
+
+text
+MONGO_URI=your-mongo-uri
+SESSION_SECRET=your-secret
+EMAIL_USER=your-email@example.com
+EMAIL_PASS=your-email-password
+Start the server:
+
+bash
+npm start
+# or for development
+nodemon app.js
+Visit http://localhost:5000 in your browser.
+
+📝 Usage
+Signup: Students and admins must create an account (admin signup via /auth/admin-signup).
+
+Book Management: Admins can add, update, or delete books.
+
+Issuing/Returning: Admins issue and collect books; students see current and past loans.
+
+Overdue Handling: Fines are automatically calculated for overdue books and shown on dashboards.
+
+Email Reminders: Admins can send reminders for overdue books.
+
+💸 Fine Calculation
+Each overdue book accrues a daily fine.
+
+Fines are displayed for each book and as a total in both the admin and student dashboards.
+
+💡 Useful Links
+Node.js Docs
+
+Express.js
+
+MongoDB Docs
+
+Bootstrap
+
+🤝 Contributing
+Open to pull requests and suggestions. Please fork the repo and submit a PR.
 
