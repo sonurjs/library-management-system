@@ -86,22 +86,3 @@ For running the application:
 5. You need to first signup and then login as admin or student to run the application.
 6. Admin signup page can't be accessed from the application. However, I have created a hidden route to access the page: `/auth/admin-signup`
 
-## Useful Links
-- Github Repo: https://github.com/aayush301/Library-management-system
-- Nodejs download: https://nodejs.org/
-- VS Code download: https://code.visualstudio.com/
-- Tutorials: https://www.w3schools.com/
-- npmjs docs: https://docs.npmjs.com/
-- Expressjs docs: https://expressjs.com/
-- Bootstrap docs: https://getbootstrap.com/docs/5.1/getting-started/introduction/
-- Mongoosejs docs: https://mongoosejs.com/docs/index.html
-- Mongodb atlas: https://www.mongodb.com/cloud/atlas/register
-- Mongodb docs: https://docs.mongodb.com/manual/introduction/
-- Nodemailer docs: https://nodemailer.com/
-- Github docs: https://docs.github.com/en/get-started/quickstart/hello-world
-- Git cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
-- VS Code keyboard shortcuts: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
-
-## Contact
-- Email: aayush5521186@gmail.com
-- Linkedin: https://www.linkedin.com/in/aayush12/
